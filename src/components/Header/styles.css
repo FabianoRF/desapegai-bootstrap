@@ -1,0 +1,21 @@
+.nav-item {
+  font-weight: 500;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  transition: color 0.2s;
+}
+
+svg{
+  transition: color 0.2s;
+}
+
+button:hover{
+  color: var(--info)!important;
+}
+
+button:hover svg{
+  color: var(--info)!important;
+}

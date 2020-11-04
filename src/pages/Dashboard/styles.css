@@ -1,0 +1,30 @@
+.text-e-commerce{
+  margin-top: 20px;
+  font-size: 26px;
+  line-height: 35px;
+
+  color: #858585;
+}
+
+.image-carroussel{
+  width: 100% ;
+  max-height: 500px ;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image-card{
+  width: 100% ;
+  max-height: 150px ;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.btn-card{
+  width: 100%;
+  border: 0!important;
+}
+
+.btn-card:hover{
+  background: var(--info)!important;
+}
