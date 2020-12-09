@@ -1,17 +1,7 @@
-.text-e-commerce{
-  margin-top: 20px;
-  font-size: 26px;
-  line-height: 35px;
-
-  color: #858585;
+.card {
+  margin: 10px 0;
 }
 
-.image-carroussel{
-  width: 100% ;
-  max-height: 500px ;
-  overflow: hidden;
-  object-fit: cover;
-}
 
 .image-card{
   width: 100% ;
