@@ -9,7 +9,7 @@ import Modal from '../../components/Modal';
 
 import api from '../../services/api';
 
-interface CarData {
+interface ObjectData {
   id: number;
   image_url: string;
   title: string;
@@ -17,11 +17,11 @@ interface CarData {
   description: string;
 }
 
-const Cars: React.FC = () => {
-  const [cars, setCars] = useState<CarData[]>([]);
+const Objects: React.FC = () => {
+  const [objects, setCars] = useState<ObjectData[]>([]);
 
   useEffect(() => {
-    api.get('/cars').then(response => {
+    api.get('/objects').then(response => {
       setCars(response.data);
     });
   }, []);
@@ -30,24 +30,24 @@ const Cars: React.FC = () => {
     <>
       <Header />
 
-      <div className="background-car">
+      <div className="background-object">
         <div className="container-title container d-md-flex flex-column ">
-          <h1 className="text-center font-weight-bold">Encontre carros</h1>
+          <h1 className="text-center font-weight-bold">Encontre objetos</h1>
           <h4 className="text-center">
-            Veiculos semi-novos, clássicos ou 0km, você encontra tudo aqui...
+            Todos tipos de pertences, desde bicicletas à celulares...
           </h4>
         </div>
 
         <main className="container-main">
           <div className="container d-md-flex justify-content-between flex-wrap">
-            {cars.map(car => (
+            {objects.map(object => (
               <Card
-                key={car.id}
-                id={car.id}
-                title={car.title}
-                image_url={car.image_url}
-                price={car.price}
-                description={car.description}
+                key={object.id}
+                id={object.id}
+                title={object.title}
+                image_url={object.image_url}
+                price={object.price}
+                description={object.description}
               />
             ))}
           </div>
@@ -61,4 +61,4 @@ const Cars: React.FC = () => {
   );
 };
 
-export default Cars;
+export default Objects;

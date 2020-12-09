@@ -9,7 +9,7 @@ import Modal from '../../components/Modal';
 
 import api from '../../services/api';
 
-interface CarData {
+interface ObjectData {
   id: number;
   image_url: string;
   title: string;
@@ -17,12 +17,12 @@ interface CarData {
   description: string;
 }
 
-const Cars: React.FC = () => {
-  const [cars, setCars] = useState<CarData[]>([]);
+const HomeObjects: React.FC = () => {
+  const [homeObjects, setHomeObjects] = useState<ObjectData[]>([]);
 
   useEffect(() => {
-    api.get('/cars').then(response => {
-      setCars(response.data);
+    api.get('/home-objects').then(response => {
+      setHomeObjects(response.data);
     });
   }, []);
 
@@ -32,22 +32,22 @@ const Cars: React.FC = () => {
 
       <div className="background-car">
         <div className="container-title container d-md-flex flex-column ">
-          <h1 className="text-center font-weight-bold">Encontre carros</h1>
+          <h1 className="text-center font-weight-bold">Itens para sua casa</h1>
           <h4 className="text-center">
-            Veiculos semi-novos, clássicos ou 0km, você encontra tudo aqui...
+            Encontre móveis, decoração, tapetes e muito mais...
           </h4>
         </div>
 
         <main className="container-main">
           <div className="container d-md-flex justify-content-between flex-wrap">
-            {cars.map(car => (
+            {homeObjects.map(object => (
               <Card
-                key={car.id}
-                id={car.id}
-                title={car.title}
-                image_url={car.image_url}
-                price={car.price}
-                description={car.description}
+                key={object.id}
+                id={object.id}
+                title={object.title}
+                image_url={object.image_url}
+                price={object.price}
+                description={object.description}
               />
             ))}
           </div>
@@ -61,4 +61,4 @@ const Cars: React.FC = () => {
   );
 };
 
-export default Cars;
+export default HomeObjects;

@@ -7,6 +7,7 @@ const Header: React.FC = () => {
   return (
     <Navbar
       collapseOnSelect
+      expand="lg"
       variant="dark"
       className="bg-primary border-bottom border-info"
     >
@@ -20,14 +21,11 @@ const Header: React.FC = () => {
         className="justify-content-end"
       >
         <Nav className="font-weight-bold text-light">
-          <Nav.Link
-            href="#features"
-            className="nav-item font-weight-bold text-light"
-          >
+          <Nav.Link href="/" className="nav-item font-weight-bold text-light">
             Home
           </Nav.Link>
           <Nav.Link
-            href="#features"
+            href="/register"
             className="nav-item font-weight-bold text-light"
           >
             Vender
@@ -38,9 +36,9 @@ const Header: React.FC = () => {
             id="collasible-nav-dropdown"
             className="font-weight-bold text-light"
           >
-            <NavDropdown.Item href="#action/3.1">Automóveis</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Casa</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Pessoal</NavDropdown.Item>
+            <NavDropdown.Item href="/cars">Automóveis</NavDropdown.Item>
+            <NavDropdown.Item href="/home-objects">Casa</NavDropdown.Item>
+            <NavDropdown.Item href="/objects">Pessoal</NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link href="#pricing">Entrar</Nav.Link>
