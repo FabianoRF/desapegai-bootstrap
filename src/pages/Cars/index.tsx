@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import './styles.css';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Card from '../../components/Card';
+import Modal from '../../components/Modal';
 
-import carImage from '../../assets/images/cars.jpeg';
 import api from '../../services/api';
 
 interface CarData {
   id: number;
   image_url: string;
   title: string;
+  price: number;
   description: string;
 }
 
@@ -32,7 +32,7 @@ const Dashboard: React.FC = () => {
 
       <div className="background-car">
         <div className="container-title container d-md-flex flex-column ">
-          <h2 className="text-center font-weight-bold">Encontre carros</h2>
+          <h1 className="text-center font-weight-bold">Encontre carros</h1>
           <h4 className="text-center">
             Veiculos semi-novos, clássicos ou 0km, você encontra tudo aqui...
           </h4>
@@ -46,6 +46,7 @@ const Dashboard: React.FC = () => {
                 id={car.id}
                 title={car.title}
                 image_url={car.image_url}
+                price={car.price}
                 description={car.description}
               />
             ))}
@@ -54,6 +55,8 @@ const Dashboard: React.FC = () => {
       </div>
 
       <Footer />
+
+      <Modal />
     </>
   );
 };

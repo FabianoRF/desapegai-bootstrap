@@ -4,53 +4,63 @@
       "id": 1,
       "title":"Fuscão 66", 
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
-      "value": 2000.00,
+      "price": 2000.90,
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 2,
       "title":"Fuscão 66", 
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
+      "price": 2000.70,
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+      
     },
     {
       "id": 3,
       "title":"Fuscão 66", 
+      "price": 2000.00,
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 4,
       "title":"Fuscão 66", 
+      "price": 2000.00,
+
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 5,
       "title":"Fuscão 66", 
+      "price": 2000.00,
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 6,
       "title":"Fuscão 66", 
+      "price": 2000.00,
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 7,
+      "price": 2000.00,
       "title":"Fuscão 66", 
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 8,
+      "price": 2000.00,
       "title":"Fuscão 66", 
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
     },
     {
       "id": 9,
+      "price": 2000.00,
       "title":"Fuscão 66", 
       "description": "Fuscão pronto para dar roles, motor em dia, tudo certo pra rodar.",
       "image_url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"

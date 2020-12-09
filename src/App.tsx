@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
+import { ProductProvider } from './hooks';
 
 import './styles/bootstrap.min.css';
 import './styles/global.css';
@@ -8,7 +9,9 @@ import './styles/global.css';
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <Routes />
+      <ProductProvider>
+        <Routes />
+      </ProductProvider>
     </BrowserRouter>
   );
 };

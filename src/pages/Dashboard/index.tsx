@@ -67,6 +67,7 @@ const Dashboard: React.FC = () => {
 
       <div className="container">
         <h2 className="font-weight-bold">Categorias</h2>
+
         <div className="container d-md-flex justify-content-between">
           <div className="card" style={{ width: '18rem' }}>
             <img
@@ -79,7 +80,7 @@ const Dashboard: React.FC = () => {
               <p className="card-text">
                 Anuncie seu véiculo ou procure por algum, é você quem manda!
               </p>
-              <Link to="ssd" className="btn btn-primary btn-card">
+              <Link to="/cars" className="btn btn-primary btn-card">
                 Visitar
               </Link>
             </div>

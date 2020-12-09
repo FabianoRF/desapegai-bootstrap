@@ -1,0 +1,21 @@
+.img-modal {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 20px!important;
+}
+
+.container-description{
+  margin-top: 20px;
+}
+
+.container-price {
+  display: flex;
+  align-items:  center;
+
+}
+
+.price {
+  font-size:  36px;
+  color: var(--info);
+  margin-left: 20px;
+}
