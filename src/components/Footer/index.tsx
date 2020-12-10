@@ -10,8 +10,8 @@ import './styles.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="container-fluid font-weight-bold footer">
-      <div className="row align-items-center justify-content-start py-3">
+    <footer className="container-fluid font-weight-bold footer p-3">
+      <div className="d-sm-flex align-items-center justify-content-between ">
         <div className="col-10 ">
           <span className="pr-3 text-primary">Sobre nós</span>
           <span className="pr-3 text-primary">Como Vender</span>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           </button>
         </div>
 
-        <div className="col-2 d-flex justify-content-end">
+        <div className="d-flex justify-content-end container-socials">
           <a className="pr-3" href="facebook">
             <FiFacebook size="25" color="#7737FF" />
           </a>

@@ -25,6 +25,8 @@
       "prettier"
   ],
   "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": "off",
     "camelcase": "off",
     "react/prop-types": "off",
     "no-use-before-define": "off",

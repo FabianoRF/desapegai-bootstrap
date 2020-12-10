@@ -30,7 +30,7 @@ const HomeObjects: React.FC = () => {
     <>
       <Header />
 
-      <div className="background-car">
+      <div className="background-ho">
         <div className="container-title container d-md-flex flex-column ">
           <h1 className="text-center font-weight-bold">Itens para sua casa</h1>
           <h4 className="text-center">

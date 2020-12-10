@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext, useState } from 'react';
+import api from '../services/api';
 
 interface Product {
   id: number;
@@ -13,6 +14,10 @@ interface ProductContextData {
   setActualProduct(product: Product): void;
   modalVisible: boolean;
   handleShowModal(): void;
+  registerProduct(
+    product: Omit<Product, 'id'>,
+    category: string,
+  ): Promise<Product>;
 }
 
 const ProductContext = createContext<ProductContextData>(
@@ -31,9 +36,24 @@ const ProductProvider: React.FC = ({ children }) => {
     setProduct(actualProduct);
   }, []);
 
+  const registerProduct = useCallback(
+    async (newProduct: Product, category: string) => {
+      const response = await api.post(`/${category}`, newProduct);
+
+      return response.data;
+    },
+    [],
+  );
+
   return (
     <ProductContext.Provider
-      value={{ product, handleShowModal, modalVisible, setActualProduct }}
+      value={{
+        product,
+        handleShowModal,
+        modalVisible,
+        setActualProduct,
+        registerProduct,
+      }}
     >
       {children}
     </ProductContext.Provider>

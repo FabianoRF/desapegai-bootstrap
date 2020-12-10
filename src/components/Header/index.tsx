@@ -3,7 +3,11 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './styles.css';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  showLogo?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ showLogo = true }) => {
   return (
     <Navbar
       collapseOnSelect
@@ -11,8 +15,8 @@ const Header: React.FC = () => {
       variant="dark"
       className="bg-primary border-bottom border-info"
     >
-      <Navbar.Brand href="#home" className="logo">
-        Desapega-aí
+      <Navbar.Brand href="/" className="logo">
+        {showLogo && 'Desapega-aí'}
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,7 +29,7 @@ const Header: React.FC = () => {
             Home
           </Nav.Link>
           <Nav.Link
-            href="/register"
+            href="/register-products"
             className="nav-item font-weight-bold text-light"
           >
             Vender
@@ -41,7 +45,9 @@ const Header: React.FC = () => {
             <NavDropdown.Item href="/objects">Pessoal</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link href="#pricing">Entrar</Nav.Link>
+          <Nav.Link href="/sign-in" className="font-weight-bold text-light">
+            Entrar
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
