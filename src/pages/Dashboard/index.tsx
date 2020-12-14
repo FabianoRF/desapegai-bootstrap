@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 
 import carousselImage1 from '../../assets/images/carroussel-image.png';
 import carousselImage2 from '../../assets/images/boxes.jpg';
+import carousselImage3 from '../../assets/images/carroussel-image3.jpg';
 import ecommerceImage from '../../assets/images/e-commerce.svg';
 import carImage from '../../assets/images/cars.jpeg';
 import homeImage from '../../assets/images/home.jpeg';
@@ -32,6 +33,20 @@ const Dashboard: React.FC = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block image-carroussel"
+            src={carousselImage3}
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Faça dinheiro!</h3>
+            <p>Fature uma grana com o que você não utiliza mais...</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
         <Carousel.Item>
           <img
             className="d-block image-carroussel"
@@ -44,20 +59,6 @@ const Dashboard: React.FC = () => {
             <p>
               Se não deseja desapegar de nada e sim se apegar, este também é seu
               lugar...
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block image-carroussel"
-            src={carousselImage1}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -80,7 +81,10 @@ const Dashboard: React.FC = () => {
               <p className="card-text">
                 Anuncie seu véiculo ou procure por algum, é você quem manda!
               </p>
-              <Link to="/cars" className="btn btn-primary btn-card">
+              <Link
+                to="/cars"
+                className="btn btn-primary btn-card d-flex justify-content-center"
+              >
                 Visitar
               </Link>
             </div>
@@ -97,7 +101,10 @@ const Dashboard: React.FC = () => {
               <p className="card-text">
                 Procure por móveis, decoração e tudo para a sua casa!
               </p>
-              <Link to="ssd" className="btn btn-primary btn-card">
+              <Link
+                to="/home-objects"
+                className="btn btn-primary btn-card d-flex justify-content-center"
+              >
                 Visitar
               </Link>
             </div>
@@ -114,7 +121,10 @@ const Dashboard: React.FC = () => {
               <p className="card-text">
                 Celulares, acessórios, eletrônicos e muito mais!
               </p>
-              <Link to="ssd" className="btn btn-primary btn-card">
+              <Link
+                to="/objects"
+                className="btn btn-primary btn-card  d-flex justify-content-center"
+              >
                 Visitar
               </Link>
             </div>
@@ -128,12 +138,14 @@ const Dashboard: React.FC = () => {
         <div>
           <h2 className="font-weight-bold">Desapegue você também!</h2>
           <p className="text-e-commerce">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque non
-            cursus metus, sed mollis neque. Morbi maximus neque nec eros
-            consequat, eget fringilla tortor luctus. Mauris commodo porttitor
-            purus, nec pulvinar diam ultrices at. Nulla accumsan, diam in
-            hendrerit dictum, elit velit fringilla neque.
+            Venha conhecer todos nossos produtos, desde objetos pessoais do dia
+            a dia, como tênis, tapetes, smarthphones, até carros, desde
+            clássicos à carros 0km. Lembrando que você também pode anunciar
+            produtos, fornecendo uma descrição detalhada preço e foto do mesmo.
           </p>
+          <Link to="/about-us" className="btn btn-outline-primary">
+            Conheça nossa equipe!
+          </Link>
         </div>
 
         <img src={ecommerceImage} alt="e-commerce" />

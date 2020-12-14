@@ -7,7 +7,6 @@ import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Modal from '../../components/Modal';
-import api from '../../services/api';
 import { useProductContext } from '../../hooks';
 
 const HomeObjects: React.FC = () => {

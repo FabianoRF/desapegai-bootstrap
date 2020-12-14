@@ -48,6 +48,10 @@ const Header: React.FC<HeaderProps> = ({ showLogo = true }) => {
           <Nav.Link href="/sign-in" className="font-weight-bold text-light">
             Entrar
           </Nav.Link>
+
+          <Nav.Link href="/sign-up" className="font-weight-bold text-light">
+            Cadastrar
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

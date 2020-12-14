@@ -33,19 +33,22 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="d-flex justify-content-end container-socials">
-          <a className="pr-3" href="facebook">
+          <a className="pr-3" href="https://www.facebook.com/fabiano.reis.44/">
             <FiFacebook size="30" />
           </a>
 
-          <a className="pr-3" href="instagram">
+          <a
+            className="pr-3"
+            href="https://www.instagram.com/reisfabian0/?hl=pt-br"
+          >
             <FiInstagram size="30" />
           </a>
 
-          <a className="pr-3" href="facebook">
+          <a className="pr-3" href="https://www.linkedin.com/in/fabianoreisf/">
             <FiLinkedin size="30" />
           </a>
 
-          <a href="facebook">
+          <a href="https://twitter.com/reisfabiano0">
             <FiTwitter size="30" />
           </a>
         </div>

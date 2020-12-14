@@ -7,12 +7,11 @@ import * as Yup from 'yup';
 import './styles.css';
 
 import { FiLock, FiLogIn, FiMail, FiUser } from 'react-icons/fi';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Footer from '../../components/Footer';
 
 import signUpIlustration from '../../assets/images/signUpIlustration.svg';
 
-import api from '../../services/api';
 import Input from '../../components/Input';
 import getValidationErrors from '../../utils/getValidationErrors';
 import Header from '../../components/Header';

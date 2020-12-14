@@ -34,9 +34,15 @@
   margin: 50px;
 }
 
+.container-profile img, .container-profile svg{
+  height: 230px;
+  width: 230px;
+}
+
 .container-profile-text {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 15px;
+  width: 70%;
 }
 
 .container-profile-text h3{
@@ -60,5 +66,11 @@
   .container-about-text p{
     color: var(--info);
 
+  }
+}
+
+@media(max-width: 500px){
+  .container-profile-text {
+    width: 100%;
   }
 }

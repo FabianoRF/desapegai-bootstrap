@@ -12,7 +12,6 @@ import Footer from '../../components/Footer';
 import signInIlustration from '../../assets/images/signInIlustration.svg';
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import api from '../../services/api';
 import Input from '../../components/Input';
 import Header from '../../components/Header';
 

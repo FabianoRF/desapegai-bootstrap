@@ -37,7 +37,7 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <>
-      <div className="card" style={{ width: '18rem' }}>
+      <div className="card m-3" style={{ width: '18rem' }}>
         <img
           className="card-img-top image-card"
           src={image_url}
@@ -49,7 +49,7 @@ const Card: React.FC<CardProps> = ({
           <Button
             type="button"
             onClick={handleClickButtonDetails}
-            className="btn btn-primary btn-card"
+            className="btn btn-primary btn-card d-flex justify-content-center"
           >
             <span className="text-light">Ver detalhes</span>
           </Button>

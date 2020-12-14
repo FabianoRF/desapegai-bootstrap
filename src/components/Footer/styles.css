@@ -8,7 +8,7 @@
 
 .container-links a:hover{
   text-decoration: none;
-  color: var(--info)!important;
+  color: #FF872C!important;
 }
 
 .container-socials svg{

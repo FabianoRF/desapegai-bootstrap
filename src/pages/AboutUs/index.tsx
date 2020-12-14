@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
@@ -9,6 +9,10 @@ import fabianoImg from '../../assets/images/fabiano.png';
 import catImg from '../../assets/images/cat_ilustration.svg';
 
 const AboutUs: React.FC = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
@@ -22,7 +26,7 @@ const AboutUs: React.FC = () => {
         <img src={peopleImg} alt="time" className="container-about-img" />
       </main>
 
-      <section className="container-profile d-md-flex">
+      <section className="container-profile d-md-flex justify-content-between">
         <div className="container-profile-text">
           <h3>Desenvolvedor</h3>
           <p>
@@ -33,7 +37,7 @@ const AboutUs: React.FC = () => {
         <img src={fabianoImg} alt="fabiano" />
       </section>
 
-      <section className="container-profile d-md-flex flex-row-reverse">
+      <section className="container-profile d-md-flex flex-row-reverse justify-content-between">
         <div className="container-profile-text">
           <h3>UX/UI Designer</h3>
           <p>
@@ -44,7 +48,7 @@ const AboutUs: React.FC = () => {
         <img src={catImg} alt="fabiano" />
       </section>
 
-      <section className="container-profile d-md-flex ">
+      <section className="container-profile d-md-flex justify-content-between">
         <div className="container-profile-text">
           <h3>Marketing</h3>
           <p>

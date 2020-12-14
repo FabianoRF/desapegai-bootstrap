@@ -31,7 +31,7 @@ const Objects: React.FC = () => {
       <Header />
 
       <div className="background-object">
-        <div className="container-title container d-md-flex flex-column ">
+        <div className="container-title container d-md-flex flex-column">
           <h1 className="text-center font-weight-bold">Encontre objetos</h1>
           <h4 className="text-center">
             Todos tipos de pertences, desde bicicletas à celulares...
@@ -39,7 +39,7 @@ const Objects: React.FC = () => {
         </div>
 
         <main className="container-main">
-          <div className="container d-md-flex justify-content-between flex-wrap">
+          <div className="container container-cards d-md-flex justify-content-between flex-wrap p-3">
             {objects.map(object => (
               <Card
                 key={object.id}
