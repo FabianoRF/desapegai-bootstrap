@@ -18,7 +18,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
-      <Carousel className="mx-5">
+      <Carousel>
         <Carousel.Item>
           <img
             className="d-block image-carroussel"
@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
       <div className="container">
         <h2 className="font-weight-bold">Categorias</h2>
 
-        <div className="container d-md-flex justify-content-between">
+        <div className="container d-md-flex justify-content-between align-items-center">
           <div className="card" style={{ width: '18rem' }}>
             <img
               className="card-img-top image-card"

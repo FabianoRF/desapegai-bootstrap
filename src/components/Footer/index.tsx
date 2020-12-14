@@ -6,15 +6,20 @@ import {
   FiTwitter,
   FiChevronUp,
 } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 const Footer: React.FC = () => {
   return (
     <footer className="container-fluid font-weight-bold footer p-3">
-      <div className="d-sm-flex align-items-center justify-content-between ">
-        <div className="col-10 ">
-          <span className="pr-3 text-primary">Sobre nós</span>
-          <span className="pr-3 text-primary">Como Vender</span>
+      <div className="d-sm-flex align-items-center justify-content-between p-3 ">
+        <div className=" container-links">
+          <Link className="pr-3 text-primary" to="/about-us">
+            Sobre nós
+          </Link>
+          <Link className="pr-3 text-primary" to="/register-products">
+            Vender
+          </Link>
           <button
             type="button"
             className="font-weight-bold align-items-center text-primary"
@@ -29,24 +34,24 @@ const Footer: React.FC = () => {
 
         <div className="d-flex justify-content-end container-socials">
           <a className="pr-3" href="facebook">
-            <FiFacebook size="25" color="#7737FF" />
+            <FiFacebook size="30" />
           </a>
 
           <a className="pr-3" href="instagram">
-            <FiInstagram size="25" color="#7737FF" />
+            <FiInstagram size="30" />
           </a>
 
           <a className="pr-3" href="facebook">
-            <FiLinkedin size="25" color="#7737FF" />
+            <FiLinkedin size="30" />
           </a>
 
           <a href="facebook">
-            <FiTwitter size="25" color="#7737FF" />
+            <FiTwitter size="30" />
           </a>
         </div>
       </div>
 
-      <span className="row justify-content-start text-info p-3">
+      <span className="container-fluid justify-content-start text-info p-3">
         Desenvolvido por Fabiano Reis 2020 ©
       </span>
     </footer>

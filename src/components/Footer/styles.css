@@ -1,3 +1,21 @@
 .footer {
   border-top: 4px solid #7737FF;
 }
+
+.container-links a{
+  transition: color 0.2s
+}
+
+.container-links a:hover{
+  text-decoration: none;
+  color: var(--info)!important;
+}
+
+.container-socials svg{
+  color: #7737FF;
+  transition: color 0.2s;
+}
+
+.container-socials svg:hover{
+  color: #FF872C;
+}

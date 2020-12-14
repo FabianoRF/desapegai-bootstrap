@@ -8,6 +8,7 @@ import HomeObjects from './pages/HomeObjects';
 import RegisterProduct from './pages/RegisterProduct';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import AboutUs from './pages/AboutUs';
 
 const Routes: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Routes: React.FC = () => {
       <Route component={RegisterProduct} path="/register-products" />
       <Route component={SignIn} path="/sign-in" />
       <Route component={SignUp} path="/sign-up" />
+      <Route component={AboutUs} path="/about-us" />
     </Switch>
   );
 };
