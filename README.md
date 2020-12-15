@@ -8,7 +8,7 @@ Caso não possua, acesse este link para baixá-lo: https://nodejs.org/en/ (A ins
 
 Depois de clonar o projeto e instalar o node, abra um terminal na pasta raiz do projeto e execute o comando:
 
-`npm install` -> este comando instalará as dependencias do projeto. (OBS: Este comando só deve ser executado na primeira vez que for executar o projeto)
+`npm install` -> este comando instalará as dependencias do projeto. (OBS: Este comando só deve ser executado na primeira vez que for executar o projeto e pode demorar um pouquinho...)
 
 Apos o termino da execução, execute o comando:
 
